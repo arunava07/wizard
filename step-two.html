@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+        <meta name="author" content="Coderthemes">
+
+         <link rel="icon" media="(prefers-color-scheme:dark)" href="assets/images/favicon-dark.png" type="image/png" />
+        <link rel="icon" media="(prefers-color-scheme:light)" href="assets/images/favicon-light.png" type="image/png" />
+
+        <title>TokTown</title>
+
+       
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+        <script src="https://unpkg.com/favicon-switcher@1.2/dist/index.js" crossorigin="anonymous" type="application/javascript"></script>
+        
+        
+    <script>
+      // If `prefers-color-scheme` is not supported, fall back to light mode.
+      // In this case, light.css will be downloaded with `highest` priority.
+      if (window.matchMedia('(prefers-color-scheme)').media === 'not all') {
+        document.documentElement.style.display = 'none';
+        document.head.insertAdjacentHTML(
+            'beforeend',
+            '<link rel="stylesheet" href="light.css" onload="document.documentElement.style.display = ``">'
+        );
+      }
+    </script>
+
+    <link rel="stylesheet" href="demo/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="demo/light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
+    <link rel="stylesheet" href="demo/common.css">
+    <script type="module" src="demo/dark-mode-toggle-playground.mjs"></script>
+    <script type="module" src="demo/dark-mode-toggle.mjs"></script>
+    <link rel="stylesheet" href="build/css/intlTelInput.css">
+    <link rel="stylesheet" href="build/css/demo.css">
+    <link href="assets/css/progress-wizard.min.css" rel="stylesheet" type="text/css" />
+ </head>
+
+
+    <body class="dash-bord-body">
+
+        <div class="c-bg"></div>
+        
+         
+        
+        
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container">
+
+                    <!-- LOGO -->
+                    <div class="topbar-left">
+                        <a href="http://jbdinnovation.com/ramesh/TokTown_Website/index.html" class="logo">
+                        
+                        
+                          <svg class="dashbord-logo"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 306.8 70.8">
+                            <circle cx="30.9" cy="34.2" r="3.8" fill="#ff0201"></circle>
+                            <circle cx="41.9" cy="34.2" r="3.8"></circle>
+                            <circle cx="19.8" cy="34.2" r="3.8"></circle>
+                            <path d="M30.9 8.8c-14 0-25.4 11.4-25.4 25.4s11.4 25.4 25.4 25.4 25.4-11.4 25.4-25.4S44.9 8.8 30.9 8.8zm0 45.1c-10.9 0-19.7-8.8-19.7-19.7S20 14.5 30.9 14.5s19.7 8.8 19.7 19.7-8.8 19.7-19.7 19.7zm50.9-32.7v32.4H74V21.2H61.5v-7.3h32.9v7.3H81.8zm38.9 18.5c0 8.5-6.2 14.6-14.4 14.6s-14.4-6.2-14.4-14.6c0-8.5 6.2-14.6 14.4-14.6s14.4 6.1 14.4 14.6zm-7.4 0c0-5.2-3.4-7.8-7-7.8s-7 2.6-7 7.8 3.4 7.8 7 7.8 7-2.5 7-7.8zm29-2.1l11.3 16h-9.1L137.1 43l-3.1 3.2v7.3h-7.4V13h7.4v23.2l9.5-10.2h9.7l-10.9 11.6zm32.9-16.4v32.4h-7.8V21.2h-12.5v-7.3h32.9v7.3h-12.6zm38.9 18.5c0 8.5-6.2 14.6-14.4 14.6s-14.4-6.2-14.4-14.6c0-8.5 6.2-14.6 14.4-14.6s14.4 6.1 14.4 14.6zm-7.5 0c0-5.2-3.4-7.8-7-7.8s-7 2.6-7 7.8 3.4 7.8 7 7.8c3.7.1 7-2.5 7-7.8zM242.7 26l5.9 17.8 5.1-17.8h7.4l-8.6 27.6H245l-6.4-18.8-6.3 18.8h-7.6L215.9 26h7.8l5.1 17.7 6-17.7h7.9zm30.5 27.5h-7.4V26h7.2v3.4c1.7-2.9 5-4.1 8-4.1 6.8 0 10 4.9 10 10.9v17.4h-7.4V37.5c0-3.1-1.5-5.5-5.1-5.5-3.2 0-5.2 2.5-5.2 5.7v15.8z"></path>
+                        </svg>
+
+                        </a>
+                    </div>
+                    <!-- End Logo container-->
+
+
+                    <div class="menu-extras">
+
+                        <ul class="nav navbar-nav navbar-right pull-right">
+                            <li>
+                                <form role="search" class="navbar-left app-search pull-left hidden-xs">
+                                     <input type="text" placeholder="Search..." class="form-control">
+                                     <a href=""><i class="fa fa-search"></i></a>
+                                </form>
+                            </li>
+                            <li>
+                                <!-- Notification -->
+                                <div class="notification-box">
+                                    <ul class="list-inline m-b-0">
+                                        <li>
+                                            <a href="javascript:void(0);" class="right-bar-toggle">
+                                                <i class="zmdi zmdi-notifications-none"></i>
+                                            </a>
+                                            <div class="noti-dot">
+                                                <span class="dot"></span>
+                                                <span class="pulse"></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End Notification bar -->
+                            </li>
+
+                            <li class="dropdown user-box">
+                                <a href="" class="dropdown-toggle waves-effect waves-light profile " data-toggle="dropdown" aria-expanded="true">
+                                    
+                                   
+                                    
+                                    <span class="profile-name">SK</span>
+                                    
+                                    
+                                    
+                                    <div class="user-status away"><i class="zmdi zmdi-dot-circle"></i></div>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a href="javascript:void(0)"><i class="ti-user m-r-5"></i> Profile</a></li>
+                                    <li><a href="javascript:void(0)"><i class="ti-settings m-r-5"></i> Settings</a></li>
+                                    <li><a href="javascript:void(0)"><i class="ti-lock m-r-5"></i> Lock screen</a></li>
+                                    <li><a href="javascript:void(0)"><i class="ti-power-off m-r-5"></i> Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="menu-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                            <!-- End mobile menu toggle-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+         
+            
+            
+
+         
+        </header>
+        <!-- End Navigation Bar-->
+
+
+        
+         <img src="assets/images/users/avatar-1.jpg" alt="user-img" class="avatar-picture">
+        
+        
+        
+        <div class="wrapper">
+            <div class="container">
+
+
+
+
+
+
+      
+
+
+                <div class="row">
+                    <div class="col-lg-12">
+   
+                        
+                        
+                        
+                        <div class="text-center body-content-area">
+                        
+                        <h1>Now let’s pick an <span>icon</span> for <br>your call widget.</h1>
+                        
+
+                            
+                            
+                            
+            
+
+    
+                            
+                            
+                            
+                            
+                  
+                            
+                            
+                            
+                               <div class="content-area-section m-t-30 ">
+                            
+                                 
+                                   
+                                   
+                                   
+                                   
+                                          <form class="form-horizontal enter-website custom-form" action="index.html">
+
+                        
+                                              <div class="check-icon c-icon-area-phone-w">
+                                              
+                                              
+                                              <div class="row">
+                                              
+                                              <div class="col-sm-6 col-lg-3 col-md-3">
+                                                  
+                                                  
+                            <div class="gal-detail thumb">
+                     
+                                <div class="c-icon-area-phone">
+                                   <svg fill="#1293f5" xmlns="http://www.w3.org/2000/svg" viewBox="-49 141 524.283 512" xmlns:v="https://vecta.io/nano">
+                                    <path d="M210.635 147.738C73.523 147.738-37.627 258.89-37.627 396s111.15 248.262 248.262 248.262S458.896 533.11 458.896 396s-111.15-248.262-248.26-248.262zm131.15 342.27l-13.953 23.26a28.42 28.42 0 0 1-16.701 12.905c-23.2 6.36-74.342 7.648-156.326-74.337S74.102 318.693 80.463 295.503a28.42 28.42 0 0 1 12.905-16.701l23.26-13.953c5.307-3.183 12.178-1.637 15.61 3.512l37.08 55.62c3.36 5.052 2.26 11.84-2.528 15.57l-20.822 16.197c-4.52 3.48-5.817 9.738-3.054 14.727 6.113 11 11.906 23.95 40.582 52.663s41.672 34.47 52.663 40.582c4.99 2.762 11.248 1.464 14.727-3.054l16.197-20.822c3.73-4.787 10.518-5.89 15.57-2.528l55.62 37.08a11.6 11.6 0 0 1 3.512 15.612z"></path>
+                                    </svg>
+                                </div>
+                                
+
+                                
+                                            <div class="radio radio-primary">
+                                                <input type="radio" name="radio3" id="radio1" value="option3">
+                                                <label for="radio1">
+                                                   
+                                                </label>
+                                            </div>
+                                
+                                
+                                
+                            </div>
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                        </div>
+                                     
+                                                  
+                  <div class="col-sm-6 col-lg-3 col-md-3">
+                            <div class="gal-detail thumb">
+                            <div class="c-icon-area-phone">
+                                   <svg fill="#374046" xmlns="http://www.w3.org/2000/svg" viewBox="475.283 141 562.659 512" xmlns:v="https://vecta.io/nano"><g><path d="M554.77 484.942l-44.2 142.11 153.216-27.717"></path><circle cx="754.414" cy="396.39" r="248.262"></circle></g><circle cx="754.414" cy="396.39" r="208.43" fill="#fff"></circle><path d="M696.348 300.524l16.864 25.298c3.352 5.038 2.253 11.808-2.52 15.526L689.928 357.5c-4.506 3.47-5.8 9.71-3.046 14.686 6.096 10.96 11.873 23.883 40.468 52.515s41.555 34.372 52.515 40.468c4.975 2.754 11.217 1.46 14.686-3.046l16.152-20.764c3.72-4.773 10.488-5.872 15.526-2.52l55.465 36.975c5.135 3.423 6.676 10.275 3.503 15.567l-13.914 23.193a28.33 28.33 0 0 1-16.654 12.868c-23.125 6.343-74.133 7.626-155.887-74.128S618.266 320.546 624.61 297.42c1.992-6.998 6.6-12.96 12.868-16.654l23.193-13.914c5.292-3.174 12.144-1.632 15.567 3.503l20.11 30.168z"></path></svg>
+                                </div>
+                                
+                                            <div class="radio radio-primary">
+                                                <input type="radio" name="radio3" id="radio2" value="option3">
+                                                <label for="radio2">
+                                                   
+                                                </label>
+                                            </div>
+                                
+                                
+                           
+                            </div>
+                        </div>
+                                                  
+                                                  
+                                                  
+                                                  
+                     <div class="col-sm-6 col-lg-3 col-md-3">
+                            <div class="gal-detail thumb">
+                            <div class="c-icon-area-phone">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="1036.672 141 542.836 512" xmlns:v="https://vecta.io/nano" fill="#ccdd20"><circle cx="1301.647" cy="395" r="248.262"></circle><path d="M1224.125 298.98l17.02 25.535a11.67 11.67 0 0 1-2.544 15.671l-20.958 16.302a11.61 11.61 0 0 0-3.074 14.823c6.153 11.062 11.984 24.106 40.846 53.005s41.943 34.693 53.005 40.846a11.61 11.61 0 0 0 14.823-3.074l16.302-20.958a11.67 11.67 0 0 1 15.671-2.544l55.983 37.32a11.67 11.67 0 0 1 3.535 15.712l-14.044 23.4a28.6 28.6 0 0 1-16.809 12.989c-23.34 6.402-74.824 7.697-157.34-74.82s-81.227-134.005-74.824-157.346a28.59 28.59 0 0 1 12.99-16.81l23.4-14.044c5.342-3.203 12.258-1.647 15.713 3.535l20.296 30.447zm160.005 88.8a4.61 4.61 0 0 1-4.609-4.609c-.048-43.254-35.1-78.307-78.355-78.355a4.61 4.61 0 0 1-4.609-4.609 4.61 4.61 0 0 1 4.609-4.609c48.343.053 87.52 39.23 87.573 87.573a4.61 4.61 0 0 1-4.609 4.609zm-27.654 0a4.61 4.61 0 0 1-4.609-4.609c-.033-27.987-22.713-50.667-50.7-50.7a4.61 4.61 0 0 1-4.609-4.609 4.61 4.61 0 0 1 4.609-4.609c33.076.038 59.88 26.842 59.92 59.92a4.61 4.61 0 0 1-4.61 4.608zm-27.656 0a4.61 4.61 0 0 1-4.609-4.609c-.015-12.72-10.324-23.03-23.046-23.046a4.61 4.61 0 0 1-4.609-4.609 4.61 4.61 0 0 1 4.609-4.609c17.8.02 32.244 14.453 32.264 32.264a4.61 4.61 0 0 1-4.609 4.609z" fill="#fff"></path></svg>
+                                </div>
+                                
+                                
+                                
+                                
+                                  <div class="radio radio-primary">
+                                                <input type="radio" name="radio3" id="radio3" value="option3">
+                                                <label for="radio3">
+                                                   
+                                                </label>
+                                            </div>
+                                
+                                
+                           
+                            </div>
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                        </div>
+                                                  
+                                                  
+                                                  
+                                                  
+                    <div class="col-sm-6 col-lg-3 col-md-3">
+                       <div class="gal-detail thumb">
+                      <div class="c-icon-area-phone"><svg fill="#f6412d" xmlns="http://www.w3.org/2000/svg" viewBox="1576.658 141 545.686 512" xmlns:v="https://vecta.io/nano"><circle cx="1847.748" cy="396.39" r="248.262"></circle><circle cx="1847.748" cy="396.39" r="208.43" fill="#fff"></circle><path d="M1789.683 300.524l16.864 25.298c3.352 5.038 2.253 11.808-2.52 15.526l-20.764 16.152c-4.506 3.47-5.8 9.7-3.046 14.686 6.096 10.96 11.873 23.883 40.468 52.515s41.555 34.372 52.515 40.468c4.975 2.754 11.216 1.46 14.686-3.046l16.152-20.764c3.72-4.773 10.488-5.872 15.526-2.52l55.465 36.975c5.135 3.423 6.676 10.275 3.503 15.567l-13.914 23.193a28.33 28.33 0 0 1-16.654 12.868c-23.125 6.343-74.133 7.626-155.887-74.128s-80.476-132.767-74.133-155.892c1.992-6.998 6.6-12.96 12.868-16.654l23.193-13.914c5.292-3.174 12.144-1.632 15.567 3.503l20.112 30.168zm158.527 87.978a4.57 4.57 0 0 1-4.567-4.567c-.048-42.854-34.776-77.583-77.63-77.63a4.57 4.57 0 0 1-4.567-4.566 4.57 4.57 0 0 1 4.567-4.567c47.896.053 86.7 38.867 86.764 86.764.001 2.523-2.044 4.567-4.566 4.567zm-27.4 0a4.57 4.57 0 0 1-4.567-4.567c-.033-27.73-22.503-50.2-50.232-50.232a4.57 4.57 0 0 1-4.567-4.566 4.57 4.57 0 0 1 4.567-4.567c32.77.038 59.327 26.594 59.365 59.365.001 2.523-2.044 4.567-4.566 4.567zm-27.4 0a4.57 4.57 0 0 1-4.567-4.567c-.015-12.604-10.23-22.817-22.833-22.833a4.57 4.57 0 0 1-4.567-4.567 4.57 4.57 0 0 1 4.567-4.567c17.646.02 31.945 14.32 31.966 31.966.001 2.524-2.044 4.568-4.566 4.568z"></path></svg></div>
+                                
+                                
+                                
+                                  <div class="radio radio-primary">
+                                                <input type="radio" name="radio3" id="radio4" value="option3">
+                                                <label for="radio4">
+                                                   
+                                                </label>
+                                            </div>
+                                
+                            
+                            </div>
+                        </div>
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                 </div> 
+                                              
+                                              </div>
+                                              
+                                              
+
+                                              
+                                              
+                           <div class="row">                 
+                                 <div class="col-sm-12 col-lg-12 col-md-12"  >         
+                        
+                           <div class="form-group ">
+                               
+        
+
+                               
+                                <div class="text-center"> 
+                               <a id="toggle" class="btn btn-lg  m-t-20 sign-in do-it btn-botton-line btn-active" >I like that</a>
+                               </div>
+                               
+                               
+                               
+                               
+                               
+                                                               <div class="pick-talk">                            
+                            <div class="comment">
+                                <img src="assets/images/users/avatar-1.jpg" alt="" class="comment-avatar ">
+                                <div class="comment-body">
+                                    <div class="comment-text">
+                                      
+                                       Don't like them? You can change it later. Better yet, call our customer service! They'll make you a special, customwidget. Just the way you want it.
+
+                      
+                                    </div>
+
+                           
+                                </div>
+
+               
+          
+                            </div>
+      </div>
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               </div>  
+                               
+                               
+
+                       
+                                                  <div class="website-screen  m-t-30">
+                                              
+                                              
+                                                 <div class="enter-website"> <img  src="assets/images/custom-icon/Screenshot.png" width="100%"></div> 
+                                                   
+                                              
+                                              </div>        
+                               
+                               
+	                                         
+                        
+                            
+                        
+              </div>             
+                        
+   </div>
+                        
+                        
+                        
+                        
+
+					
+						
+						
+                    </form>
+                            
+                            
+                                                             
+     <ul class="progress-indicator">
+            <li class="completed">
+                 <a href="step-one.html" data-toggle="tooltip" data-placement="bottom" title="Step one"> <span class="bubble"></span></a>
+               
+            </li>
+            <li class="completed">
+              <a href="step-two.html" data-toggle="tooltip" data-placement="bottom" title="Step two"> <span class="bubble"></span></a>
+              
+            </li>
+            <li class="completed">
+               <a href="step-three.html" data-toggle="tooltip" data-placement="bottom" title="Step three"> <span class="bubble"></span></a>
+             
+            </li>
+            <li class="completed">
+                <a href="step-four.html" data-toggle="tooltip" data-placement="bottom" title=" Step four"><span class="bubble"></span></a>
+               
+            </li>
+             <li class="completed">
+                <a href="step-five.html" data-toggle="tooltip" data-placement="bottom" title=" Step five"><span class="bubble"></span></a>
+               
+            </li>
+           
+          
+          
+    </ul>                               
+                       
+
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+
+                            
+                         </div>     
+                        
+                        </div>
+                        
+                        
+                        
+                    </div><!-- end col -->
+
+   
+
+                </div>
+                <!-- end row -->
+
+
+                
+
+            </div>
+            <!-- end container -->
+             <!-- Footer -->
+                <footer class="footer text-right">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                2020 © TokTown.
+                            </div>
+                            <div class="col-xs-6">
+                                <ul class="pull-right list-inline m-b-0">
+                                    <li>
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Help</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- End Footer -->   
+
+
+            <!-- Right Sidebar -->
+            <div class="side-bar right-bar">
+                <a href="javascript:void(0);" class="right-bar-toggle">
+                    <i class="zmdi zmdi-close-circle-o"></i>
+                </a>
+                <h4 class="">Notifications</h4>
+                <div class="notification-list nicescroll">
+                    <ul class="list-group list-no-border user-list">
+                        <li class="list-group-item">
+                            <a href="#" class="user-list-item">
+                                <div class="avatar">
+                                    <img src="assets/images/users/avatar-2.jpg" alt="">
+                                </div>
+                                <div class="user-desc">
+                                    <span class="name">Michael Zenaty</span>
+                                    <span class="desc">There are new settings available</span>
+                                    <span class="time">2 hours ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="user-list-item">
+                                <div class="icon bg-info">
+                                    <i class="zmdi zmdi-account"></i>
+                                </div>
+                                <div class="user-desc">
+                                    <span class="name">New Signup</span>
+                                    <span class="desc">There are new settings available</span>
+                                    <span class="time">5 hours ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="user-list-item">
+                                <div class="icon bg-pink">
+                                    <i class="zmdi zmdi-comment"></i>
+                                </div>
+                                <div class="user-desc">
+                                    <span class="name">New Message received</span>
+                                    <span class="desc">There are new settings available</span>
+                                    <span class="time">1 day ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item active">
+                            <a href="#" class="user-list-item">
+                                <div class="avatar">
+                                    <img src="assets/images/users/avatar-3.jpg" alt="">
+                                </div>
+                                <div class="user-desc">
+                                    <span class="name">James Anderson</span>
+                                    <span class="desc">There are new settings available</span>
+                                    <span class="time">2 days ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item active">
+                            <a href="#" class="user-list-item">
+                                <div class="icon bg-warning">
+                                    <i class="zmdi zmdi-settings"></i>
+                                </div>
+                                <div class="user-desc">
+                                    <span class="name">Settings</span>
+                                    <span class="desc">There are new settings available</span>
+                                    <span class="time">1 day ago</span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- /Right-bar -->
+
+        </div>
+
+
+
+         <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+         <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/custom.js"></script>
+
+    </body>
+</html>
